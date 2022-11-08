@@ -64,3 +64,35 @@ input#msgTxt {
     border-radius: 5px;
     background-color: green !important;
 }
+
+.field {
+    display:flex;
+    position:realtive;
+    margin:5em auto;
+    width:50px;
+    flex-direction:row;
+    -moz-box-shadow:    0px 0px 2px 0px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.2);
+    box-shadow:         0px 0px 2px 0px rgba(0,0,0,0.2);
+  }
+  
+  .field>input[type=text],
+  .field>button {
+    display:block;
+    font:1.2em 'Open sans';
+  }
+  
+  .field>input[type=text] {
+    flex:1;
+    padding:0.6em;
+    border:0.2em solid #819090;
+    border-left: none;
+    border-top: none;
+  }
+  
+  .field>button {
+    padding:0.6em 0.8em;
+    background-color: #819090;
+    color: #fff;
+    border:none;
+  }
