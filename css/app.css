@@ -46,9 +46,10 @@ body, html {
     top: 0;
 }
 #history {
-     width: 100%;
+     width: 95%;
      height: calc(100% - 40px);
      overflow: auto;
+     padding: 5px;
 }
 input#msgTxt {
             height: 30px;
@@ -60,10 +61,18 @@ input#msgTxt {
     color: #00ff00b1;
     text-align: right;
     margin-right: 10px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
 }
 #history .theirs {
     color: #00ffffa5;
     margin-left: 10px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
 }
 .OT_edge-bar-item{
     border-radius: 50px;
