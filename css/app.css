@@ -24,11 +24,12 @@ body, html {
     flex-wrap: wrap;
 }
 #publisher {
-    position: absolute;
+    position: fixed;
     width: 330px;
     height: 190px;
     bottom: 10px;
     left: 0px;
+    bottom: 0;
     z-index: 100;
     border: 2px solid white;
     border-radius: 3px;
