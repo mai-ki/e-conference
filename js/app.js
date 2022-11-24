@@ -1,6 +1,3 @@
-/* global API_KEY TOKEN SESSION_ID SAMPLE_SERVER_BASE_URL OT */
-/* eslint-disable no-alert */
-
 var apiKey;
 var session;
 var sessionId;
@@ -8,12 +5,14 @@ var token;
 
 function initializeSession() {
   session = OT.initSession(apiKey, sessionId);
+  //<<<<<<<<<<<<<<<<<Subscriber>>>>>>>>>>>>>>>>>>>>
 
   session.on('streamCreated', function streamCreated(event) {
     var subscriberOptions = {
       insertMode: 'append',
       width: '100%',
-      height: '100%'
+      height: '100%',
+      style: { nameDisplayMode: 'on', buttonDisplayMode: 'on'}
     };
     session.subscribe(event.stream, 'subscriber', subscriberOptions, function callback(error) {
       
@@ -34,15 +33,13 @@ function initializeSession() {
   session.on('sessionDisconnected', function sessionDisconnected(event) {
     console.error('You were disconnected from the session.', event.reason);
   });
-
+//<<<<<<<<<<<<<<<<<Publisher>>>>>>>>>>>>>>>>>>>>
   var publisherOptions = {
-    name: "Migue",
-    style: { nameDisplayMode: "on" },
     insertMode: 'append',
     width: '100%',
     height: '100%',
-    style: { buttonDisplayMode: 'on', backgroundColor: 'blue', color: 'white' }
-    
+    name: "",
+    style: { nameDisplayMode: 'on',  buttonDisplayMode: 'on'}
   };
   var publisher = OT.initPublisher('publisher', publisherOptions, function initCallback(initErr) {
     if (initErr) {
@@ -55,11 +52,11 @@ function initializeSession() {
     if (!error) {
       session.publish(publisher, function publishCallback(publishErr) {
         if (publishErr) {
-          console.error('There was an error publishing: ', publishErr.name, publishErr.message);
+          console.error('Hubo un error al publicar: ', publishErr.name, publishErr.message);
         }
       });
     } else {
-      console.error('There was an error connecting to the session: ', error.name, error.message);
+      console.error('Hubo un error al conectarse a la sesión: ', error.name, error.message);
     }
   });
 
