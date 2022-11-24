@@ -58,18 +58,18 @@ input#msgTxt {
             width: 96%;
 }
 #history .mine {
-    color: #00ff00b1;
+    color: #fff;
     text-align: right;
     margin-right: 10px;
-    background: #fff;
+    background: #00ff00b1;
     border-radius: 10px;
     padding: 5px;
     box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
 }
 #history .theirs {
-    color: #00ffffa5;
+    color: #fff;
     margin-left: 10px;
-    background: #fff;
+    background: #00ffffa5;
     border-radius: 10px;
     padding: 5px;
     box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
