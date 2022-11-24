@@ -71,4 +71,5 @@ input#msgTxt {
 #subscriber .OT_publisher, .OT_subscriber {
   width: 250px !important;
   height: 250px !important;
+  border-radius: 15px;
 }
