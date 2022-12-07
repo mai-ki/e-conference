@@ -1,78 +1,3 @@
-<<<<<<< HEAD
-body, html {
-    background-color: rgb(167, 26, 66);
-    height: 100%;
-}
-#logo {
-    position: absolute;
-    top: 5;
-    left: 5;
-}
-#videos {
-    position: relative;
-    width: 70%;
-    height: 100%;
-    float: left;
-}
-#subscriber {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    margin-left: 130px;
-    z-index: 10;
-    display: flex;
-    flex-wrap: wrap;
-}
-#publisher {
-    position: fixed;
-    width: 330px;
-    height: 190px;
-    bottom: 10px;
-    left: 0px;
-    bottom: 0;
-    z-index: 100;
-    border: 2px solid white;
-    border-radius: 3px;
-}
-#textchat {
-    position: fixed;
-    width: 16%;
-    float: right;
-    right: 0;
-    height: 94%;
-    background-color: rgba(255, 255, 255, 0.253);
-    right: 0;
-    top: 0;
-}
-#history {
-     width: 100%;
-     height: calc(100% - 40px);
-     overflow: auto;
-}
-input#msgTxt {
-            height: 30px;
-            position: absolute;
-            bottom: 10;
-            width: 96%;
-}
-#history .mine {
-    color: #00ff00b1;
-    text-align: right;
-    margin-right: 10px;
-}
-#history .theirs {
-    color: #00ffffa5;
-    margin-left: 10px;
-}
-.OT_edge-bar-item{
-    border-radius: 50px;
-    background-color: rgb(0, 143, 57) !important;
-}
-#subscriber .OT_publisher, .OT_subscriber {
-  width: 250px !important;
-  height: 250px !important;
-=======
 body, html {
     background-color: rgb(167, 26, 66);
     height: 100%;
@@ -179,5 +104,4 @@ input#msgTxt {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(167, 26, 66); 
->>>>>>> d0e8235f19503e3e4724de99ef77617ea8307391
 }
