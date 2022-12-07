@@ -34,11 +34,23 @@ function initializeSession() {
     console.error('You were disconnected from the session.', event.reason);
   });
 //<<<<<<<<<<<<<<<<<Publisher>>>>>>>>>>>>>>>>>>>>
+  var video=true;
+  var audio=true;
+  function turnvideo(){
+    video = !video
+  }
+  function turnaudio(){
+    audio = !audio
+  }
   var publisherOptions = {
+    publishVideo:video,
+    publishAudio:audio, 
     insertMode: 'append',
     width: '100%',
     height: '100%',
     name: "",
+    showControls:true,
+    insertDefaultUI:true,
     style: { nameDisplayMode: 'on',  buttonDisplayMode: 'on'}
   };
   var publisher = OT.initPublisher('publisher', publisherOptions, function initCallback(initErr) {

@@ -9,7 +9,6 @@
         "html-has-lang": "off"
       }
     ],
-    "meta-viewport": "off",
-    "no-inline-styles": "off"
+    "meta-viewport": "off"
   }
 }

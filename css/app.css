@@ -14,31 +14,35 @@ body, html {
     float: left;
 }
 #subscriber {
-    position: absolute;
     left: 0;
     top: 0;
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
     margin-left: 130px;
     z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
 }
 #publisher {
-    position: absolute;
+    position: fixed;
     width: 330px;
     height: 190px;
     bottom: 10px;
     left: 0px;
+    bottom: 0;
     z-index: 100;
     border: 2px solid white;
     border-radius: 3px;
 }
 #textchat {
-    position: relative;
+    position: fixed;
     width: 16%;
     float: right;
     right: 0;
     height: 94%;
     background-color: rgba(255, 255, 255, 0.253);
+    right: 0;
+    top: 0;
 }
 #history {
      width: 100%;
@@ -63,4 +67,8 @@ input#msgTxt {
 .OT_edge-bar-item{
     border-radius: 50px;
     background-color: rgb(0, 143, 57) !important;
+}
+#subscriber .OT_publisher, .OT_subscriber {
+  width: 250px !important;
+  height: 250px !important;
 }
